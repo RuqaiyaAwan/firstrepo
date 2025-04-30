@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Upload MCQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="admin-login">
+    <h2>Admin Login</h2>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+    <button onclick="checkAdmin()">Login</button>
+</div>
+
+<div class="container hidden" id="admin-panel">
+    <h2>Upload MCQs (Word File)</h2>
+    <input type="file" id="fileInput" accept=".txt">
+    <button onclick="loadQuestions()">Upload Questions</button>
+
+    <h3>Preview Loaded Questions:</h3>
+    <div id="preview"></div>
+
+    <button onclick="saveQuestions()">Save and Update Website</button>
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

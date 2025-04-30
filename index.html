@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Test Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container form-container" id="form-container">
+    <h2>Join the Quiz</h2>
+    <input type="text" placeholder="Enter Name" id="userName">
+    <input type="text" placeholder="Enter Mobile Number" id="mobileNumber">
+    <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div class="container quiz-container hidden" id="quiz-container">
+    <h1>MCQ Test</h1>
+    <div id="timer" class="glow">Time Left: <span id="time">60s</span></div>
+
+    <form id="quiz-form">
+        <div id="questions-area"></div>
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="result" class="hidden"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
